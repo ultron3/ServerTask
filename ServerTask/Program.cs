@@ -20,7 +20,7 @@ class Server
         var cts = new CancellationTokenSource();
         CancellationToken token = cts.Token;
 
-        // Specifica l'indirizzo IP e la porta su cui il server ascolta
+        // Specifico l'indirizzo IP e la porta su cui il server ascolta
         IPAddress ipAddress = IPAddress.Parse(_ipAddress);
      
 
@@ -105,7 +105,7 @@ class Server
     }
     static bool IsTextMessage(byte[] data, int length)
     {
-        // Puoi implementare una logica per determinare se i dati sono un messaggio in base al loro contenuto o lunghezza.
+      
         // In questo esempio, consideriamo messaggio se i dati contengono testo UTF-8.
         try
         {
@@ -123,7 +123,7 @@ class Server
 
         string directoryPath = "C:\\Users\\IdeaPad\\OneDrive\\Documenti"; 
 
-        // Assicurati che la directory esista, altrimenti creala
+        // bisogna assicurarsi che la directory esista altrimenti la si crea
         if (!Directory.Exists(directoryPath))
         {
             Directory.CreateDirectory(directoryPath);
